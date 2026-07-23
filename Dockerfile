@@ -1,5 +1,5 @@
 # Menggunakan sistem operasi Linux dasar yang sudah terpasang PHP dan Web Server Apache
-FROM php:8.2-apache
+FROM php:8.4-apache
 
 # Menginstal ekstensi sistem yang dibutuhkan oleh Laravel, Filament, dan PostgreSQL (Supabase)
 RUN apt-get update && apt-get install -y \
