@@ -30,13 +30,13 @@ class AdminPanelProvider extends PanelProvider
             ->brandName('NKBF')
             ->brandLogo(fn () => new \Illuminate\Support\HtmlString('
                 <div style="display: flex; align-items: center; gap: 12px;">
-                    <img src="' . asset('images/logo.png') . '" alt="Logo NKBF" style="height: 3rem;">
+                    <img src="' . secure_asset('images/logo.png') . '" alt="Logo NKBF" style="height: 3rem;">
                     <span style="font-weight: 800; font-size: 1.5rem; letter-spacing: 1px;">NKBF</span>
                 </div>
             '))
             //->brandLogo(asset('images/logo.png'))
             //->brandLogoHeight('3.5rem')
-            ->favicon(asset('images/logo.png'))
+            ->favicon(secure_asset('images/logo.png'))
              // Pastikan baris ini ada di paling atas file jika belum ada
 
 // ... kode di dalam fungsi panel(Panel $panel)
